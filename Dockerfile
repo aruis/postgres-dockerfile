@@ -5,7 +5,7 @@ MAINTAINER aruis (lovearuis@gmail.com)
 ENV PLV8_VERSION=2.3.11
 
 RUN apt-get -y update \
-    && apt-get -y install 
+    && apt-get -y install \
     postgresql-server-dev-11 \
     vim \
     wget \
