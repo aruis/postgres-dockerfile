@@ -7,7 +7,6 @@ ENV PLV8_VERSION=2.3.11
 RUN apt-get -y update 
 RUN apt-get -y install curl
 RUN apt-get -y install postgresql-server-dev-11
-RUN apt-get -y install vim
 RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev 
