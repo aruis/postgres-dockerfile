@@ -16,6 +16,7 @@ RUN mkdir -p /plv8build
 RUN cd plv8build && wget https://github.com/plv8/plv8/archive/v${PLV8_VERSION}.tar.gz
 RUN cd plv8build && tar -xvzf v${PLV8_VERSION}.tar.gz
 RUN cd plv8build && cd plv8-${PLV8_VERSION} && make USE_PGXS=1 && make USE_PGXS=1 install
+RUN apt-get -y remove git
 RUN rm -rf /plv8build 
 RUN rm -rf /var/lib/apt/lists/*
 
