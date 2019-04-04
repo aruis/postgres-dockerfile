@@ -20,4 +20,4 @@ RUN apt-get -y remove git
 RUN rm -rf /plv8build 
 RUN rm -rf /var/lib/apt/lists/*
 
-RUN apt-get autoremove && apt-get clean
+RUN apt-get -y autoremove && apt-get clean
