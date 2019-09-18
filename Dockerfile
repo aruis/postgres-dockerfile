@@ -9,7 +9,6 @@ RUN apt-get -y install postgresql-server-dev-11
 RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev
-RUN apt-get -y install postgresql-11-postgis-2.5
     
 RUN apt-get -y install curl git \ 
     && mkdir -p /plv8build \
