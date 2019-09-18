@@ -1,8 +1,8 @@
-FROM postgres:11.2
+FROM postgres:11.5
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
-ENV PLV8_VERSION=2.3.11
+ENV PLV8_VERSION=2.3.13
 
 RUN apt-get -y update 
 RUN apt-get -y install postgresql-server-dev-11
