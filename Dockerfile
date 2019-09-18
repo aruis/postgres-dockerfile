@@ -1,14 +1,15 @@
-FROM postgres:11.2
+FROM postgres:11.5
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
-ENV PLV8_VERSION=2.3.11
+ENV PLV8_VERSION=2.3.13
 
 RUN apt-get -y update 
 RUN apt-get -y install postgresql-server-dev-11
 RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
-RUN apt-get -y install libc++-dev 
+RUN apt-get -y install libc++-dev
+RUN apt-get -y install postgresql-11-postgis-2.5
     
 RUN apt-get -y install curl git \ 
     && mkdir -p /plv8build \
