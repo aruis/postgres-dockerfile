@@ -9,6 +9,7 @@ RUN apt-get -y install postgresql-server-dev-12
 RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev 
+RUN apt install libtinfo5
     
 RUN apt-get -y install curl git \ 
     && mkdir -p /plv8build \
