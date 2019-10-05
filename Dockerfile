@@ -5,7 +5,7 @@ MAINTAINER aruis (lovearuis@gmail.com)
 ENV PLV8_VERSION=2.3.13
 
 RUN apt-get -y update 
-RUN apt-get -y install postgresql-server-dev-11
+RUN apt-get -y install postgresql-server-dev-12
 RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev 
