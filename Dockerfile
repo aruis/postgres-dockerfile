@@ -1,4 +1,4 @@
-FROM lovaruis/postgres:11.5
+FROM lovearuis/postgres:11.5
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
