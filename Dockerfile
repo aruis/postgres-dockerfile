@@ -1,4 +1,4 @@
-FROM lovearuis/postgres-plv8:12
+FROM lovearuis/postgres-plv8:12.1
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
