@@ -1,4 +1,4 @@
-FROM postgres:12
+FROM postgres:12.1
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
