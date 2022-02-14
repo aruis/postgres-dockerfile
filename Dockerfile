@@ -12,7 +12,8 @@ RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev
 RUN apt-get -y install libc++abi-dev
-RUN apt install libtinfo5
+RUN apt-get -y install python2
+RUN apt-get -y install libtinfo5
 
 RUN mkdir -p /plv8build \
     && cd plv8build \
