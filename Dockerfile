@@ -1,8 +1,8 @@
-FROM postgres:13.2
+FROM postgres:13.6
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
-ENV PLV8_VERSION=2.3.15
+ENV PLV8_VERSION=3.0.0
 
 RUN apt-get -y update 
 RUN apt-get -y install vim
