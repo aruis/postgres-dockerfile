@@ -13,7 +13,8 @@ RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev
 RUN apt-get -y install libc++abi-dev
 RUN apt-get -y install libtinfo5
-RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN apt-get -y install python2
+RUN ln -s /usr/bin/python2 /usr/bin/python
 
 RUN mkdir -p /plv8build \
     && cd plv8build \
