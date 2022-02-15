@@ -1,4 +1,4 @@
-FROM postgres:13.6
+FROM postgres:14.2
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
@@ -7,7 +7,7 @@ ENV PLV8_VERSION=3.0.0
 RUN apt-get -y update 
 RUN apt-get -y install vim
 RUN apt-get -y install curl git
-RUN apt-get -y install postgresql-server-dev-13
+RUN apt-get -y install postgresql-server-dev-14
 RUN apt-get -y install gcc make g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libc++-dev
