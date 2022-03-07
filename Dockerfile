@@ -13,4 +13,4 @@ RUN apt-get -y update \
 RUN  wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_7_0.zip && \
   unzip REL-2_7_0.zip && \
   cd mysql_fdw-REL-2_7_0 && make USE_PGXS=1 && make USE_PGXS=1 install && \
-  cd .. && rm -R mysql_fdw-REL-2_7_0 && 
+  cd .. && rm -R mysql_fdw-REL-2_7_0
