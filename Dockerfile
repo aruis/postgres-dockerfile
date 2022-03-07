@@ -10,7 +10,7 @@ RUN apt-get -y update \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -y autoremove && apt-get clean
     
-RUN  wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_7_0.zip && \
-  unzip REL-2_7_0.zip && \
-  cd mysql_fdw-REL-2_7_0 && make USE_PGXS=1 && make USE_PGXS=1 install && \
-  cd .. && rm -R mysql_fdw-REL-2_7_0
+RUN  wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_7_0.zip \
+  && unzip REL-2_7_0.zip \
+  && cd mysql_fdw-REL-2_7_0 && make USE_PGXS=1 && make USE_PGXS=1 install \
+  && cd .. && rm -R mysql_fdw-REL-2_7_0
