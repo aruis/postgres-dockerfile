@@ -1,9 +1,9 @@
-FROM postgres:14.2
+FROM postgres:13.6
 
 MAINTAINER aruis (lovearuis@gmail.com)
 
 RUN apt-get -y update \
-    && apt-get -y install gcc make g++ cmake git postgresql-server-dev-14 \
+    && apt-get -y install gcc make g++ cmake git postgresql-server-dev-13 postgresql-13-postgis-3 \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -y autoremove && apt-get clean
 
