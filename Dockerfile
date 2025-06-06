@@ -5,7 +5,7 @@ MAINTAINER aruis (lovearuis@gmail.com)
 RUN apt-get -y update \
     && apt-get -y install gcc make \
     && apt-get -y install wget unzip \
-    && apt-get -y install postgresql-server-dev-14 \
+    && apt-get -y install postgresql-server-dev-17 \
     && apt-get -y install default-libmysqlclient-dev \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -y autoremove && apt-get clean
